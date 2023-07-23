@@ -13,10 +13,10 @@ const cervezas = [
 let elegirCerveza = prompt("Ingrese si le gusta: Ipa, Porter o Dorada")
 alert("Estas son las mas adecuadas para vos, ¡Que la disfrutes!")
 console.log(cervezas.filter((cerveza)=> cerveza.tipo === elegirCerveza ) );
-cervezas.some((cerveza)=> cerveza.tipo === elegirCerveza)
-if (cervezas.some !== cervezas.tipo){
-  alert("No pusiste bien el nombre o aun no esta en nuestro catalogo, ¡Intentá de nuevo!")
-}  
+
+
+
+
 // // function Cervezas(alcohol, color, tipo, precio) {
 // //   this.alcohol = alcohol;
 // //   this.color = color;
