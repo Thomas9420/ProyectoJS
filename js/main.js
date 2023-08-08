@@ -1,55 +1,142 @@
-let nombreUsuario = prompt("Hola! ¿Cómo te llamas?");
-console.log(nombreUsuario);
-alert("Bueno, " + nombreUsuario + ", si estás acá me imagino que te gusta la cerveza!");
-
-const cervezas = [
-  {nombre: "Bomber", tipo: "Porter", color: "Negra", alcohol: "Fuerte", precio: 750},
-  {nombre: "Summer", tipo: "Ipa", color: "Ambar", alcohol: "Equilibrada", precio: 700},
-  {nombre: "Trigueña", tipo: "Dorada", color: "Amarilla", alcohol: "Suave", precio: 700},
-  {nombre: "Chromipa", tipo: "Ipa", color: "Ambar oscuro", alcohol: "Fuerte", precio: 800},
-  {nombre: "Chromoda", tipo: "Porter", color:"Negra", alcohol: "Equilibrada", precio: 800},
-  {nombre: "Chromanqui", tipo:"Dorada", color:"Dorado", alcohol: "suave", precio: 800}
+const productos = [
+  {
+    id: "cerveza-01",
+    titulo: "Cerveza-01",
+    imagen: "",
+    categoria: {
+      nombre: "Ipas",
+      id: "ipas"
+    },
+    precio: 850
+  },
+  {
+    id: "cerveza-02",
+    titulo: "Cerveza-02",
+    imagen: "",
+    categoria: {
+      nombre: "Ipas",
+      id: "ipas"
+    },
+    precio: 850
+  },
+  {
+    id: "cerveza-03",
+    titulo: "Cerveza-03",
+    imagen: "",
+    categoria: {
+      nombre: "Ipas",
+      id: "ipas"
+    },
+    precio: 850
+  },
+  {
+    id: "cerveza-04",
+    titulo: "Cerveza-04",
+    imagen: "",
+    categoria: {
+      nombre: "Rojas",
+      id: "rojas"
+    },
+    precio: 850
+  },
+  {
+    id: "cerveza-05",
+    titulo: "Cerveza-05",
+    imagen: "",
+    categoria: {
+      nombre: "Doradas",
+      id: "doradas"
+    },
+    precio: 850
+  },
+  {
+    id: "ipas",
+    titulo: "Cerveza-06",
+    imagen: "",
+    categoria: {
+      nombre: "Doradas",
+      id: "doradas"
+    },
+    precio: 850
+  },
+  {
+    id: "ipas",
+    titulo: "Cerveza-07",
+    imagen: "",
+    categoria: {
+      nombre: "Negras",
+      id: "negras"
+    },
+    precio: 850
+  },
+  {
+    id: "ipas",
+    titulo: "Cerveza-08",
+    imagen: "",
+    categoria: {
+      nombre: "Negras",
+      id: "negras"
+    },
+    precio: 850
+  },
+  {
+    id: "ipas",
+    titulo: "Cerveza-09",
+    imagen: "",
+    categoria: {
+      nombre: "Rojas",
+      id: "rojas"
+    },
+    precio: 850
+  },
+  {
+    id: "ipas",
+    titulo: "Cerveza-10",
+    imagen: "",
+    categoria: {
+      nombre: "Negras",
+      id: "negras"
+    },
+    precio: 850
+  }
 ];
-let elegirCerveza = prompt("Ingrese si le gusta: Ipa, Porter o Dorada")
-alert("Estas son las mas adecuadas para vos, ¡Que la disfrutes!")
-console.log(cervezas.filter((cerveza)=> cerveza.tipo === elegirCerveza ) );
+const contenedorProductos = document.querySelector("#contenedor-productos");
+const botonesCategorias = document.querySelectorAll(".boton-cat");
+
+function cargarProductos(productosElegidos){
+  
+  productosElegidos.forEach(producto => {
+    contenedorProductos.innerHTML = "";
+
+    const div = document.createElement("div");
+    div.classList.add("producto");
+    div.innerHTML = `
+      <img class="img-prod" src="${producto.imagen}" alt="${producto.titulo}">
+      <div class="detalles-prod">
+          <h3 class="titulo-prod">${producto.titulo}</h3>
+          <p class="precio-prod">$${producto.precio}</p>
+          <button class="agg-prod" id="${producto.id}">Agregar</button>
+      </div>
+    `;
+
+    contenedorProductos.append(div);
+  })
+}
+cargarProductos(productos);
+
+botonesCategorias.forEach(boton => {
+  boton.addEventListener("click", (e) =>{
+
+    botonesCategorias.forEach(boton => boton.classList.remove("active"));
+    e.currentTarget.classList.add("active");
+
+    if(e.currentTarget.id !="todas"){
+    const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
+    cargarProductos(productosBoton);
+    } else {
+      cargarProductos(productos)
+    }
+  })
+})
 
 
-
-
-// // function Cervezas(alcohol, color, tipo, precio) {
-// //   this.alcohol = alcohol;
-// //   this.color = color;
-// //   this.tipo = tipo;
-// //   this.precio = precio;
-// // }
-
-// // const bebida1 = new Cervezas("Fuerte", "Negra", "Amarga", 700);
-// // const bebida2 = new Cervezas("Medio", "Ambar", "Equilibrada", 650);
-// // const bebida3 = new Cervezas("Tranquila", "Dorada", "Suave", 650);
-
-// // const pregunta = prompt("¿amarga, equilibrada o suave?");
-// // alert("Esta es la mas apta para vos! Que la disfrutes.");
-
-// // switch (pregunta) {
-// //   case "amarga":
-// //     console.log(bebida1, bebida2);
-// //     break;
-// //   case "Amarga":
-// //       console.log(bebida1, bebida2);
-// //     break;
-// //   case "equilibrada":
-// //     console.log(bebida2);
-// //     break;
-// //   case "Equilibrada":
-// //       console.log(bebida2);
-// //     break;
-// //   case "suave":
-// //     console.log(bebida3);
-// //     break;
-// //   case "Suave":
-// //     console.log(bebida3);
-// //     break;
-// //   default:
-// //     console.log("No existe o no está de momento en nuestro catalogo:(, probá recargando la pagina e intenta de nuevo :D");
-// }
