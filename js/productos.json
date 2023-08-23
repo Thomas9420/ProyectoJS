@@ -1,0 +1,182 @@
+[
+    {
+        "id": "cerveza-01",
+        "titulo": "Cerveza 01",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Dorada",
+            "id": "dorada"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-02",
+        "titulo": "Cerveza 02",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Dorada",
+            "id": "dorada"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-03",
+        "titulo": "Cerveza 03",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Dorada",
+            "id": "dorada"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-04",
+        "titulo": "Cerveza 04",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Dorada",
+            "id": "dorada"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-05",
+        "titulo": "Cerveza 05",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Dorada",
+            "id": "dorada"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-06",
+        "titulo": "Cerveza 06",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Negra",
+            "id": "negra"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-07",
+        "titulo": "Cerveza 07",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Negra",
+            "id": "negra"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-08",
+        "titulo": "Cerveza 08",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Negra",
+            "id": "negra"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-09",
+        "titulo": "Cerveza 09",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Negra",
+            "id": "negra"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-10",
+        "titulo": "Cerveza 10",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Negra",
+            "id": "negra"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-11",
+        "titulo": "Cerveza 11",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Negra",
+            "id": "negra"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-12",
+        "titulo": "Camiseta 12",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Negra",
+            "id": "Negra"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-13",
+        "titulo": "Cerveza 13",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Negra",
+            "id": "negra"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-14",
+        "titulo": "Cerveza 14",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Ipa",
+            "id": "ipa"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-15",
+        "titulo": "Cerveza 15",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Ipa",
+            "id": "ipa"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-16",
+        "titulo": "Cerveza 16",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Ipa",
+            "id": "ipa"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-17",
+        "titulo": "Cerveza 17",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Ipa",
+            "id": "ipa"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "cerveza-18",
+        "titulo": "Cerveza 18",
+        "imagen": "./img/cerveza.png",
+        "categoria": {
+            "nombre": "Ipa",
+            "id": "ipa"
+        },
+        "precio": 1000
+    }
+]
